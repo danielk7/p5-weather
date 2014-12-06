@@ -13,6 +13,7 @@ $.simpleWeather({
       $('.temp').text(weather.temp);
       $('.current').text(weather.currently);
       $('.header').text(weather.city);
+      $('.pressure').text(weather.pressure);
       
       console.log(weather);
 
