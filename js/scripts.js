@@ -1,30 +1,25 @@
-$(document).ready(function() {
-  $.simpleWeather({
+var cheney = '99004';
+var spokane = '99201';
 
 
-    location: 'Spokane, WA',
+$.simpleWeather({
+    
+    location: spokane,
     woeid: '',
     unit: 'f',
-
-
+    
     success: function(weather) {
-      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.city+', '+weather.region+'</h2>';
+      
+      $('.temp').text(weather.temp);
+      $('.current').text(weather.currently);
+      $('.header').text(weather.city);
+      
+      console.log(weather);
 
-      console.log
-
-      html += '<ul><li>'+weather.temp+' '+weather.units.temp+'&deg; - '+weather.alt.temp+' '+weather.alt.unit+'&deg; </li>';
-      html += '<li class="currently">'+weather.city+', '+weather.region+'</li>';
-      html += '<li>'+weather.currently+'</li>';
-      html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
-  // PUT DISPLAY
-  $('#weather').html(html);
-
-
-
-      $("#weather").html(html);
     },
+    
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
+    
   });
-});
