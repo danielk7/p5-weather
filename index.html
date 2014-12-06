@@ -20,13 +20,40 @@
 
     <div class="column">
       
-      <article class="ui card">  
-        
+
+
+       <ul class="ui menu">
+          <li class="item">
+            <i class="icon sun"></i>
+            <a href="#" id="day">Day</a>
+          </li>
+
+          <li class="item">
+            <i class="icon moon"></i>
+            <a href="#" id='night'>Night</a>
+          </li>
+
+          <div class="right menu">
+            <div class="item">
+              <div class="ui transparent icon input">
+                <input type="text" placeholder="Enter ZIP code">
+                <i type="submit" class="search link icon"></i>
+              </div>
+            </div>
+          </div>
+
+        </ul>
+
+
+
+      <article class="ui card">       
         <h1 class="header">Spokane</h1>
         <ul>
-          <li class="temp">00</li>
+          <li class="temp"></li>
           <li class="current"></li>
           <li class="pressure"></li>
+          <li class="wind"></li>
+          <a href="https://weather.yahoo.com/united-states/washington/spokane-12799526/">View Forecast »</a>
         </ul>   
 
         <div id="weather"></div>
@@ -34,6 +61,8 @@
       </article>
 
     </div>
+
+
 
   </div>
 
