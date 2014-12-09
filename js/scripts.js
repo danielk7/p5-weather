@@ -3,7 +3,7 @@ var spokane = '99201';'99202';'99203';'99204'; '99205'; '99206';'99207';
 var seattle = '98101';
 
 
-$.simpleWeather({
+ $.simpleWeather({
     
     location: spokane,
     woeid: '',
@@ -29,7 +29,47 @@ $.simpleWeather({
       $("#weather").html('<p>'+error+'</p>');
     }
     
+  }); 
+
+ $(document).ready(function() {  
+  getWeather(); //Get the initial weather.
+  setInterval(getWeather, 600000); //Update the weather every 10 minutes.
+});
+
+
+ $('#submit').click(function() {
+        var zip = $('#zipcode').val();
+        $('#results').content('location');
+    });
+
+function getWeather() {
+  $.simpleWeather({
+    location: '99202',
+    unit: 'f',
+    success: function(weather) {
+      html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+      html += '<li class="currently">'+weather.currently+'</li>';
+      html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';
+      html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';
+
+
+      for(var i=0;i<weather.forecast.length;i++) {
+        html += '<p>'+weather.forecast[i].day+': '+weather.forecast[i].high+'</p>';}
+
+      var timestamp = moment(weather.updated);
+      html += '<p>Weather updated '+moment(timestamp).fromNow()+'</p>';
+      
+      html += '<p>Weather updated at '+moment(timestamp).format('MM/DD/YY h:mma')+'</p>';
+  
+      $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
   });
+}
+
 
 
 
