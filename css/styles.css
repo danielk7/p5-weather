@@ -20,14 +20,31 @@ z-index: '';
 
 
 h1{
+font-size: 45px;
 line-height: 1.33em;
 margin: -webkit-calc(2rem - 0.165em ) 0em 1rem;
 margin: calc(2rem - 0.165em ) 0em 1rem;
 font-weight: bold;
 padding: 0em;
 margin-left: 22px;
+text-align: center;
 }
 
+ul {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 100;
+  font-style: normal;
+}
+
+li {
+display: list-item;
+ list-style: none;
+}
+
+ul.item {
+  text-align: left;
+}
 
 }
 .ui.menu {
@@ -44,6 +61,7 @@ border-radius: 0.2857rem;
 a {
 color: #009fda;
 text-decoration: none;
+font-size: 20px;
 }
 
 li {
