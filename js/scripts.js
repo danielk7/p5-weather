@@ -47,11 +47,11 @@ function getWeather() {
     location: '99202',
     unit: 'f',
     success: function(weather) {
-      html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+      html = '<h2>'+weather.city+', '+weather.region+'</h2>';
+      html += '<ul><li>'+weather.temp+'&deg;'+weather.units.temp+'</li>';
       html += '<li class="currently">'+weather.currently+'</li>';
-      html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';
-      html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';
+      html += '<li><p>Wind Direction</p>'+weather.wind.speed+'</li>';
+      html += '<li>'+weather.wind.direction+'</li></ul>';
 
 
       for(var i=0;i<weather.forecast.length;i++) {
