@@ -2,7 +2,12 @@
 
 body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background: #0091c2;
+  background-image: #0091c2, url('img/nature1.jpg');
+  padding-top: 80px;
+}
+
+p {
+  font-size: 25px;
 }
 
 #weather {
@@ -39,11 +44,14 @@ body {
 }
 
 #copy {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 145px;
   text-align: center;
 }
 
+h4 {
+  font-size: 20px;
+}
 
 
 
