@@ -30,7 +30,7 @@ $('button').on('click', function() {
       $('.header').text(weather.city);
       $('.pressure').text(weather.pressure);
       $('.wind').text(weather.wind.direction).text(weather.speed);
-
+      $('.sunrise').text(weather.sunrise);
 
       // See console for all properties of object
       console.log(weather);

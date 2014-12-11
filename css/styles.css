@@ -89,12 +89,17 @@ button:hover:before{
 }
  
 
+ button:focus:before,
+button:active:before{
+        border-right-color: #1fbad6;
+}      
+
 
 li.city {
 display: list-item;
 text-decoration: none;
 text-align: left;
-margin-left: -30px;
+margin-left: -25px;
 margin-top: 50px;
 }
 
@@ -102,7 +107,9 @@ margin-top: 50px;
 
 
 p {
-  font-size: 25px;
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 9px;
 }
 
 ul {
