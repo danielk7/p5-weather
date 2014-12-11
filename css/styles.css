@@ -2,7 +2,7 @@
 
 body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-image: #0091c2, url('img/nature1.jpg');
+  background:: #0091c2, url("img/s1.png");
   padding-top: 70px;
 }
 
@@ -10,8 +10,11 @@ p {
   font-size: 25px;
 }
 
-.ui.cards > .card, .ui.card {
-  background: url("img/nature1.jpg");
+ul {
+font-size: 35px;
+font-weight: 100;
+font-style: normal;
+margin-left: -34px;
 }
 
 #weather {
@@ -33,6 +36,7 @@ p {
 #weather ul {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 #weather li {
