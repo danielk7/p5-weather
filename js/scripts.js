@@ -50,6 +50,8 @@ $('button').on('click', function() {
 });
 
 
+
+
  $.simpleWeather({
     
     location: spokane,
