@@ -6,6 +6,74 @@ body {
   padding-top: 70px;
 }
 
+
+/* Form text input */
+input {
+line-height: normal;
+width: 210px;
+height: 30px;
+padding: 10px 5px;
+float: left;
+font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+border: 0;
+background: #eee;
+border-radius: 3px 0 0 3px;
+}
+
+input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+
+input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+
+/* Form submit button */
+button {
+overflow: visible;
+overflow: visible;
+position: relative;
+float: left;
+border: 0;
+padding: 0;
+cursor: pointer;
+height: 30px;
+width: 140px;
+font: bold 17px/30px 'lucida sans', 'trebuchet MS', 'Tahoma';
+color: #fff;
+text-transform: uppercase;
+background: #25CDEC;
+border-radius: 0 3px 3px 0;
+text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}
+
+
+li.city {
+display: list-item;
+text-decoration: none;
+text-align: left;
+margin-left: -30px;
+}
+
+
+
+
 p {
   font-size: 25px;
 }
@@ -14,7 +82,7 @@ ul {
 font-size: 35px;
 font-weight: 100;
 font-style: normal;
-margin-left: -34px;
+margin-left: -40px;
 }
 
 #weather {
