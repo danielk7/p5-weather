@@ -10,6 +10,10 @@ p {
   font-size: 25px;
 }
 
+.ui.cards > .card, .ui.card {
+  background: url("img/nature1.jpg");
+}
+
 #weather {
   width: 425px;
   margin: 0px auto;
@@ -46,6 +50,7 @@ p {
 #copy {
   font-size: 15px;
   margin-top: 50px;
+  margin-left: 38px;
   text-align: center;
   color: #676767;
 }
