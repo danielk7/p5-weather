@@ -23,6 +23,7 @@ var seattle = '98101';
         html += '<p>'+weather.forecast[i].day+': '+weather.forecast[i].high+'</p>';
       }
 
+   $("#weather").html(html);
     },
     
     error: function(error) {
@@ -30,9 +31,7 @@ var seattle = '98101';
     }
     
   }); 
-for(var i=0;i<weather.forecast.length;i++) {
-        html += '<p>'+weather.forecast[i].day+': '+weather.forecast[i].high+'</p>';
-      }
+
 
 
 

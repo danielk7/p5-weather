@@ -3,7 +3,7 @@
 body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-image: #0091c2, url('img/nature1.jpg');
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 p {
@@ -45,8 +45,9 @@ p {
 
 #copy {
   font-size: 15px;
-  margin-top: 145px;
+  margin-top: 50px;
   text-align: center;
+  color: #676767;
 }
 
 h4 {
