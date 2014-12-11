@@ -2,7 +2,7 @@
 
 body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background:: #0091c2, url("img/s1.png");
+  background-image:url("../img/nature1.jpg");
   padding-top: 70px;
 }
 
