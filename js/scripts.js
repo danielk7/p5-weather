@@ -27,10 +27,16 @@ $('button').on('click', function() {
       // Output to hooks in HTML
       $('.temp').text(temp);
       $('.city').text(city);
+      $('.header').text(weather.city);
+      $('.pressure').text(weather.pressure);
+      $('.wind').text(weather.wind.direction).text(weather.speed);
+
 
       // See console for all properties of object
       console.log(weather);
     },
+
+    
   
     error: function(error) {
       $('body').html('<p>' + error + '</p>');
@@ -51,25 +57,16 @@ $('button').on('click', function() {
     unit: 'f',
     
     success: function(weather) {
-      
-      $('.temp').text(weather.temp);
-      $('.current').text(weather.currently);
-      $('.header').text(weather.city);
-      $('.pressure').text(weather.pressure);
-      $('.wind').text(weather.wind.direction).text(weather.speed);
+     
       
       console.log(weather);
 
-      for(var i=0;i<weather.forecast.length;i++) {
-        html += '<p>'+weather.forecast[i].day+': '+weather.forecast[i].high+'</p>';
-      }
+  
 
    $("#weather").html(html);
     },
     
-    error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
-    }
+
     
   }); 
 
