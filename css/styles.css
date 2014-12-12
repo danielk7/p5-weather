@@ -5,6 +5,8 @@ body {
   background-image:url("../img/nature1.jpg") no-repeat;
   padding-top: 70px;
   color: white;
+  background-repeat: repeat-y;
+  background-size: 100%;
 }
 
 
@@ -130,6 +132,17 @@ margin-top: 92px;
 
 
 
+h1 {
+font-size: 45px;
+line-height: 1.33em;
+margin: -webkit-calc(2rem - 0.165em ) 0em 1rem;
+margin: calc(2rem - 0.165em ) 0em 1rem;
+font-weight: bold;
+padding: 0em;
+margin-left: 22px;
+color: white;
+text-align: center;
+}
 
 
 p {
