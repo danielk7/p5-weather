@@ -7,6 +7,8 @@ body {
 }
 
 
+
+
 /* Form text input */
 input {
 line-height: normal;
@@ -205,21 +207,6 @@ h4 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ui.cards > .card, .ui.card {
 max-width: 100%;
 position: relative;
@@ -291,7 +278,7 @@ text-decoration: none;
 }
 
 
-.day {
+//* .day {
   background: #FFF;
   color: #333;
 }
