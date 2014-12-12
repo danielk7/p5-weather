@@ -2,8 +2,9 @@
 
 body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-image:url("../img/nature1.jpg");
+  background-image:url("../img/nature1.jpg") no-repeat;
   padding-top: 70px;
+  color: white;
 }
 
 
@@ -99,6 +100,7 @@ button:active:before{
 
 h1.ui.header {
 font-size: 2rem;
+color: white;
 }
 
 li.city {
